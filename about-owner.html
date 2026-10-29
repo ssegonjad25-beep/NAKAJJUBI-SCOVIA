@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About the Owner | Prosper International University</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap');
+:root{--navy:#0b2545;--navy-light:#13315c;--gold:#c9a227;--gold-light:#e8c547;--cream:#f8f5ef;--text:#2b2b2b;--shadow:0 6px 18px rgba(11,37,69,.15);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Source Sans 3',Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.7;animation:fadeIn .9s ease-in;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-22px);}to{opacity:1;transform:translateY(0);}}
+@keyframes slideLeft{from{opacity:0;transform:translateX(-26px);}to{opacity:1;transform:translateX(0);}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(201,162,39,.3);}50%{box-shadow:0 0 0 14px rgba(201,162,39,.08);}}
+@keyframes twinkle{0%,100%{opacity:1;}50%{opacity:.35;}}
+@keyframes shimmer{to{transform:rotate(360deg);}}
+@keyframes imgReveal{from{opacity:0;transform:scale(.94);}to{opacity:1;transform:scale(1);}}
+header{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;padding:30px 20px 20px;text-align:center;border-bottom:5px solid var(--gold);position:relative;overflow:hidden;}
+header::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(201,162,39,.18),transparent 60%);pointer-events:none;}
+.crest{width:74px;height:74px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:'Playfair Display',serif;font-size:26px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;animation:pulse 3s ease-in-out infinite;position:relative;z-index:1;}
+header h1{font-family:'Playfair Display',serif;font-size:2rem;letter-spacing:1px;color:var(--gold-light);animation:slideDown .9s ease-out;position:relative;}
+.tagline{font-style:italic;color:#d9e2ec;font-size:1rem;margin-top:6px;position:relative;}
+nav{background:var(--navy-light);display:flex;flex-wrap:wrap;justify-content:center;gap:4px;padding:10px;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:100;}
+nav a{color:#f0f4f8;text-decoration:none;font-weight:600;padding:8px 14px;border-radius:4px;font-size:.9rem;position:relative;transition:color .3s,background .3s;}
+nav a::after{content:"";position:absolute;left:50%;bottom:4px;width:0;height:2px;background:var(--gold-light);transition:width .3s,left .3s;}
+nav a:hover{color:var(--gold-light);background:rgba(255,255,255,.06);}
+nav a:hover::after{width:70%;left:15%;}
+nav a.active{color:var(--gold-light);border-bottom:2px solid var(--gold);}
+main{max-width:1080px;margin:34px auto;padding:0 22px;}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;color:var(--navy);margin:22px 0 10px;}
+h1{font-size:2rem;border-left:6px solid var(--gold);padding-left:14px;animation:slideLeft .7s ease-out;}
+h2{font-size:1.35rem;color:var(--navy-light);}
+h3{font-size:1.15rem;}
+p,li{margin-bottom:10px;}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;padding:44px 30px;border-radius:14px;box-shadow:var(--shadow);text-align:center;margin-bottom:30px;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(201,162,39,.12),transparent 30%);animation:shimmer 8s linear infinite;}
+.hero h2{color:var(--gold-light);font-size:1.9rem;position:relative;}
+.hero p{position:relative;color:#e6ecf3;font-size:1.05rem;}
+figure{margin:22px 0;text-align:center;}
+figure img{max-width:100%;width:420px;height:auto;border-radius:10px;border:5px solid #fff;box-shadow:var(--shadow);transition:transform .4s,box-shadow .4s;animation:imgReveal .9s ease-out;object-fit:cover;}
+figure img:hover{transform:scale(1.04) rotate(-.5deg);box-shadow:0 12px 28px rgba(11,37,69,.28);}
+figcaption{font-style:italic;color:#5a6b80;font-size:.88rem;margin-top:6px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin:24px 0;}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:var(--shadow);border-top:4px solid var(--gold);transition:transform .35s,box-shadow .35s;}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(11,37,69,.22);}
+.card h3{margin-top:0;font-size:1.1rem;}
+.card img{width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:12px;display:block;}
+ul.styled{list-style:none;padding-left:0;}
+ul.styled li{padding:8px 0 8px 30px;position:relative;}
+ul.styled li::before{content:"★";position:absolute;left:0;color:var(--gold);animation:twinkle 2.5s ease-in-out infinite;}
+.notice{background:linear-gradient(90deg,#fff7e0,#fdf0c8);border-left:5px solid var(--gold);padding:14px 18px;border-radius:6px;margin:20px 0;font-weight:600;color:#6b5300;}
+footer{background:var(--navy);color:#cfd8e3;text-align:center;padding:26px 18px;margin-top:40px;border-top:5px solid var(--gold);font-size:.9rem;}
+footer strong{color:var(--gold-light);}
+.top-btn{position:fixed;bottom:22px;right:22px;background:var(--gold);color:var(--navy);border:none;width:46px;height:46px;border-radius:50%;font-size:1.3rem;cursor:pointer;box-shadow:var(--shadow);opacity:0;transform:translateY(20px);transition:opacity .4s,transform .4s;z-index:200;}
+.top-btn.show{opacity:1;transform:translateY(0);}
+.top-btn:hover{background:var(--gold-light);}
+@media(max-width:640px){header h1{font-size:1.4rem;}h1{font-size:1.5rem;}nav a{font-size:.78rem;padding:6px 10px;}figure img{width:100%;}}
+</style>
+</head>
+<body>
+<header>
+<div class="crest">PIU</div>
+<h1>PROSPER INTERNATIONAL UNIVERSITY</h1>
+<p class="tagline">"United for Success"</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="about-owner.html" class="active">About Owner</a>
+<a href="admission.html">Admission</a>
+<a href="advertisement.html">Advertisement</a>
+<a href="games-sports.html">Games &amp; Sports</a>
+<a href="history.html">History</a>
+<a href="mission-vision.html">Mission &amp; Vision</a>
+<a href="our-motto.html">Our Motto</a>
+<a href="projects.html">Projects</a>
+<a href="payments.html">Payments</a>
+</nav>
+<main>
+<h1>About the Owner</h1>
+<div class="grid">
+<div class="card"><h3>Founder &amp; Proprietor</h3><p><strong>Nakajjubi Scovia</strong></p><p>Contact: <strong>0764358189</strong></p></div>
+<div class="card"><h3>Visionary Leadership</h3><p>Committed to providing quality education and supporting the growth of every student.</p></div>
+</div>
+<figure>
+<img src="https://images.pexels.com/photos/34762612/pexels-photo-34762612.jpeg?auto=compress&cs=tinysrgb&w=800" alt="African graduate in traditional attire celebrating">
+<figcaption>Celebrating academic achievement — the spirit of Prosper International University</figcaption>
+</figure>
+<h2>A Message from the Founder</h2>
+<p>Welcome to Prosper International University. When I founded this institution, I had a single dream: to create a place where young people from Uganda and beyond could discover their potential, sharpen their minds, and leave ready to build their own futures.</p>
+<p>Our university is more than classrooms and examinations. It is a community where discipline, innovation, and compassion are cultivated daily. I am proud of our students, our staff, and the families who trust us with the education of their children.</p>
+<div class="grid">
+<div class="card"><img src="https://images.pexels.com/photos/36038426/pexels-photo-36038426.jpeg?auto=compress&cs=tinysrgb&w=600" alt="African woman in graduation gown smiling"><h3>Student Success</h3><p>Every learner is supported to achieve their goals.</p></div>
+<div class="card"><img src="https://images.pexels.com/photos/33345144/pexels-photo-33345144.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smiling African woman graduate with flowers"><h3>Celebrating Achievement</h3><p>Honoring the hard work of our graduates.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Professional African woman portrait"><h3>Visionary Leadership</h3><p>Guiding the university toward excellence.</p></div>
+</div>
+<h2>Our Foundation Values</h2>
+<ul class="styled">
+<li>Integrity in all academic and administrative work</li>
+<li>Excellence in teaching, research, and community service</li>
+<li>Innovation through entrepreneurship and practical projects</li>
+<li>Respect for diversity and the dignity of every learner</li>
+<li>Service to the community and the nation of Uganda</li>
+</ul>
+<figure>
+<img src="https://images.pexels.com/photos/33568692/pexels-photo-33568692.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nigerian graduates in traditional attire celebrating">
+<figcaption>Building a community of disciplined, talented, and ambitious learners</figcaption>
+</figure>
+<h2>Institutional Contact</h2>
+<ul class="styled">
+<li>Prosper International University</li>
+<li>Mubende District, Kirungi Sub County</li>
+<li>Opposite P.K Super Market</li>
+<li>Telephone: 0764358189</li>
+</ul>
+</main>
+<footer>
+<p><strong>Prosper International University</strong> &mdash; Mubende District, Uganda</p>
+<p>&copy; 2025 Prosper International University. All rights reserved.</p>
+</footer>
+<button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+const btn=document.querySelector('.top-btn');
+window.addEventListener('scroll',()=>btn.classList.toggle('show',window.scrollY>300));
+document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')===location.pathname.split('/').pop())a.classList.add('active');});
+</script>
+</body>
+</html>
